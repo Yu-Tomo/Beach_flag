@@ -85,3 +85,14 @@ C:\Users\regulus-demo\Desktop\imageClassification_ver2_2_3\imageClassification\o
 C:\Users\regulus-demo\Desktop\imageClassification_ver2_2_3\imageClassification\obj\Debug\imageClassification.csproj.CoreCompileInputs.cache
 C:\Users\regulus-demo\Desktop\imageClassification_ver2_2_3\imageClassification\obj\Debug\imageClassification.exe
 C:\Users\regulus-demo\Desktop\imageClassification_ver2_2_3\imageClassification\obj\Debug\imageClassification.pdb
+C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClassification\obj\Debug\imageClassification.csprojAssemblyReference.cache
+C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClassification\obj\Debug\imageClassification.Select_dir_form.resources
+C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClassification\obj\Debug\imageClassification.mainForm.resources
+C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClassification\obj\Debug\imageClassification.Properties.Resources.resources
+C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClassification\obj\Debug\imageClassification.csproj.GenerateResource.cache
+C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClassification\obj\Debug\imageClassification.csproj.CoreCompileInputs.cache
+C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClassification\obj\Debug\imageClassification.exe
+C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClassification\obj\Debug\imageClassification.pdb
+C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClassification\bin\Debug\imageClassification.exe.config
+C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClassification\bin\Debug\imageClassification.exe
+C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClassification\bin\Debug\imageClassification.pdb

@@ -39,7 +39,7 @@ namespace imageClassification
         private string[] childFolderNames = new string[10];             //フラグの名前を入れておくバッファ
 
 
-        private string[] all_extension = { "*.jpg", "*.png", "*.bmp" };                         //扱う拡張子
+        private string[] all_extension = { "*.jpg", "*.png", "*.bmp","*.jpeg" };                         //扱う拡張子
 
         private string nowText;
         //get set
@@ -375,6 +375,65 @@ namespace imageClassification
         {
             //ラジオボタンのチェックを確認する
             radio_button_get(imgcont.Img_set[imgcont.NowFileNum].Flg);
+        }
+
+        private void mainForm_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.D0)
+            {
+                radioButton0.Checked = true;
+                imgcont.Img_set[imgcont.NowFileNum].Flg = 0;
+            }
+            else if (e.KeyCode == Keys.D1)
+            {
+                radioButton1.Checked = true;
+                imgcont.Img_set[imgcont.NowFileNum].Flg = 1;
+            }
+            else if (e.KeyCode == Keys.D2)
+            {
+                radioButton2.Checked = true;
+                imgcont.Img_set[imgcont.NowFileNum].Flg = 2;
+            }
+            else if (e.KeyCode == Keys.D3)
+            {
+                radioButton3.Checked = true;
+                imgcont.Img_set[imgcont.NowFileNum].Flg = 3;
+            }
+            else if (e.KeyCode == Keys.D4)
+            {
+                radioButton4.Checked = true;
+                imgcont.Img_set[imgcont.NowFileNum].Flg = 4;
+            }
+            else if (e.KeyCode == Keys.D5)
+            {
+                radioButton5.Checked = true;
+                imgcont.Img_set[imgcont.NowFileNum].Flg = 5;
+            }
+            else if (e.KeyCode == Keys.D6)
+            {
+                radioButton6.Checked = true;
+                imgcont.Img_set[imgcont.NowFileNum].Flg = 6;
+            }
+            else if (e.KeyCode == Keys.D7)
+            {
+                radioButton7.Checked = true;
+                imgcont.Img_set[imgcont.NowFileNum].Flg = 7;
+            }
+            else if (e.KeyCode == Keys.D8)
+            {
+                radioButton8.Checked = true;
+                imgcont.Img_set[imgcont.NowFileNum].Flg = 8;
+            }
+            else if (e.KeyCode == Keys.D9)
+            {
+                radioButton9.Checked = true;
+                imgcont.Img_set[imgcont.NowFileNum].Flg = 9;
+            }
+        }
+
+        private void mainForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

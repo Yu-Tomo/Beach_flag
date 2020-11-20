@@ -20,6 +20,7 @@ namespace imageClassification
         public mainForm()
         {
             InitializeComponent();
+            this.Size = new Size(700,500);
             sdf = new Select_dir_form();
             sdf.MainForm = this;
             formInit();

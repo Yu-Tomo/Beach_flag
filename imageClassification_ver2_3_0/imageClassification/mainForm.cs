@@ -138,6 +138,11 @@ namespace imageClassification
             imgcont = new imgCont(absolute_path, AllimgFileNum);     //画像ファイル用のデータ領域を生成する
             imgcont.input_name(absolute_path, AllimgFileNum, all_extension);        //画像ファイルの名前をデータに入れる
             imgcont.disp_img(imgBox, absolute_path);
+
+            //画像の枚数表示
+            TextView textView = new TextView();
+            textView.text_disp(all_image_num, imgcont.NowFileNum+1 + "/" + AllimgFileNum);
+
             return true;
         }
 
@@ -250,6 +255,7 @@ namespace imageClassification
 
                 TextView textView = new TextView();
                 textView.text_disp(disp_file_name, imgcont.Img_set[imgcont.NowFileNum].Name);   //ファイル名を描画する
+                textView.text_disp(all_image_num, imgcont.NowFileNum+1 + "/" + AllimgFileNum);
                 radio_button_check(imgcont.Img_set[imgcont.NowFileNum].Flg);                    //ラジオボタンのチェックを描画する
 
                 MouseFlg = false;                                                               //次のマウスホイールイベントを許可する
@@ -441,13 +447,14 @@ namespace imageClassification
                     //前回のラジオボタンの値を引きずるモード
                     if (classContinueFlg == true)
                     {
-                        continuity_radio(imgcont.NowFileNum - 1, imgcont.NowFileNum);
+                        continuity_radio(1, imgcont.NowFileNum);
                     }
                     //
                     imgcont.disp_img(imgBox, absolute_path);
                 }
                 TextView textView = new TextView();
                 textView.text_disp(disp_file_name, imgcont.Img_set[imgcont.NowFileNum].Name);   //ファイル名を描画する
+                textView.text_disp(all_image_num, imgcont.NowFileNum + 1 + "/" + AllimgFileNum);
                 radio_button_check(imgcont.Img_set[imgcont.NowFileNum].Flg);                    //ラジオボタンのチェックを描画する
             }
             else if (e.KeyCode == Keys.K)                           //画像を戻す
@@ -455,9 +462,11 @@ namespace imageClassification
                 if (imgcont.NowFileNum > 0)
                 {
                     imgcont.NowFileNum--;
+                    imgcont.disp_img(imgBox, absolute_path);
                 }
                 TextView textView = new TextView();
                 textView.text_disp(disp_file_name, imgcont.Img_set[imgcont.NowFileNum].Name);   //ファイル名を描画する
+                textView.text_disp(all_image_num, imgcont.NowFileNum + 1 + "/" + AllimgFileNum);
                 radio_button_check(imgcont.Img_set[imgcont.NowFileNum].Flg);                    //ラジオボタンのチェックを描画する
             }
             else if (e.KeyCode == Keys.C)                           //モードチェンジをキーボードでできるようにする
@@ -473,6 +482,11 @@ namespace imageClassification
             }
         }
         private void mainForm_Load(object sender, EventArgs e)
+        {
+            this.Size = new Size(800,600);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

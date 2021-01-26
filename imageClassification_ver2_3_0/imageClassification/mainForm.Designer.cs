@@ -61,6 +61,7 @@
             this.save_b = new System.Windows.Forms.Button();
             this.cancel_b = new System.Windows.Forms.Button();
             this.img_reset = new System.Windows.Forms.Button();
+            this.all_image_num = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.imgBox)).BeginInit();
             this.flgGroupBox.SuspendLayout();
             this.SuspendLayout();
@@ -71,19 +72,17 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.imgBox.BackColor = System.Drawing.SystemColors.Menu;
-            this.imgBox.Location = new System.Drawing.Point(561, 74);
-            this.imgBox.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.imgBox.Location = new System.Drawing.Point(259, 37);
             this.imgBox.Name = "imgBox";
-            this.imgBox.Size = new System.Drawing.Size(1375, 1048);
+            this.imgBox.Size = new System.Drawing.Size(653, 420);
             this.imgBox.TabIndex = 0;
             this.imgBox.TabStop = false;
             // 
             // fileBottun
             // 
-            this.fileBottun.Location = new System.Drawing.Point(561, 24);
-            this.fileBottun.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.fileBottun.Location = new System.Drawing.Point(259, 12);
             this.fileBottun.Name = "fileBottun";
-            this.fileBottun.Size = new System.Drawing.Size(117, 38);
+            this.fileBottun.Size = new System.Drawing.Size(54, 19);
             this.fileBottun.TabIndex = 1;
             this.fileBottun.Text = "開く";
             this.fileBottun.UseVisualStyleBackColor = true;
@@ -94,10 +93,9 @@
             this.filename.AllowDrop = true;
             this.filename.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.filename.Location = new System.Drawing.Point(691, 24);
-            this.filename.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.filename.Location = new System.Drawing.Point(319, 12);
             this.filename.Name = "filename";
-            this.filename.Size = new System.Drawing.Size(1054, 31);
+            this.filename.Size = new System.Drawing.Size(507, 19);
             this.filename.TabIndex = 2;
             this.filename.DragDrop += new System.Windows.Forms.DragEventHandler(this.file_DragDrop);
             this.filename.DragEnter += new System.Windows.Forms.DragEventHandler(this.file_DragEnter);
@@ -105,10 +103,9 @@
             // disp_file_name
             // 
             this.disp_file_name.AutoSize = true;
-            this.disp_file_name.Location = new System.Drawing.Point(26, 60);
-            this.disp_file_name.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.disp_file_name.Location = new System.Drawing.Point(12, 30);
             this.disp_file_name.Name = "disp_file_name";
-            this.disp_file_name.Size = new System.Drawing.Size(382, 24);
+            this.disp_file_name.Size = new System.Drawing.Size(191, 12);
             this.disp_file_name.TabIndex = 3;
             this.disp_file_name.Text = "-------------------------------";
             // 
@@ -136,21 +133,18 @@
             this.flgGroupBox.Controls.Add(this.radioButton1);
             this.flgGroupBox.Controls.Add(this.radioButton0);
             this.flgGroupBox.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.flgGroupBox.Location = new System.Drawing.Point(30, 102);
-            this.flgGroupBox.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.flgGroupBox.Location = new System.Drawing.Point(14, 51);
             this.flgGroupBox.Name = "flgGroupBox";
-            this.flgGroupBox.Padding = new System.Windows.Forms.Padding(7, 6, 7, 6);
-            this.flgGroupBox.Size = new System.Drawing.Size(494, 282);
+            this.flgGroupBox.Size = new System.Drawing.Size(228, 141);
             this.flgGroupBox.TabIndex = 4;
             this.flgGroupBox.TabStop = false;
             this.flgGroupBox.Text = "分類選択";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(299, 44);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.textBox5.Location = new System.Drawing.Point(138, 22);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(173, 31);
+            this.textBox5.Size = new System.Drawing.Size(82, 19);
             this.textBox5.TabIndex = 15;
             this.textBox5.Text = "flg5";
             this.textBox5.Enter += new System.EventHandler(this.textBoxEnter);
@@ -158,10 +152,9 @@
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(299, 224);
-            this.textBox9.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.textBox9.Location = new System.Drawing.Point(138, 112);
             this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(173, 31);
+            this.textBox9.Size = new System.Drawing.Size(82, 19);
             this.textBox9.TabIndex = 22;
             this.textBox9.Text = "flg9";
             this.textBox9.Enter += new System.EventHandler(this.textBoxEnter);
@@ -169,10 +162,9 @@
             // 
             // textBox8
             // 
-            this.textBox8.Location = new System.Drawing.Point(299, 178);
-            this.textBox8.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.textBox8.Location = new System.Drawing.Point(138, 89);
             this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(173, 31);
+            this.textBox8.Size = new System.Drawing.Size(82, 19);
             this.textBox8.TabIndex = 21;
             this.textBox8.Text = "flg8";
             this.textBox8.Enter += new System.EventHandler(this.textBoxEnter);
@@ -181,10 +173,9 @@
             // radioButton9
             // 
             this.radioButton9.AutoSize = true;
-            this.radioButton9.Location = new System.Drawing.Point(258, 230);
-            this.radioButton9.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.radioButton9.Location = new System.Drawing.Point(119, 115);
             this.radioButton9.Name = "radioButton9";
-            this.radioButton9.Size = new System.Drawing.Size(53, 28);
+            this.radioButton9.Size = new System.Drawing.Size(29, 16);
             this.radioButton9.TabIndex = 19;
             this.radioButton9.TabStop = true;
             this.radioButton9.Text = "9";
@@ -194,10 +185,9 @@
             // radioButton5
             // 
             this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(258, 52);
-            this.radioButton5.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.radioButton5.Location = new System.Drawing.Point(119, 26);
             this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(53, 28);
+            this.radioButton5.Size = new System.Drawing.Size(29, 16);
             this.radioButton5.TabIndex = 18;
             this.radioButton5.TabStop = true;
             this.radioButton5.Text = "5";
@@ -206,10 +196,9 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(299, 134);
-            this.textBox7.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.textBox7.Location = new System.Drawing.Point(138, 67);
             this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(173, 31);
+            this.textBox7.Size = new System.Drawing.Size(82, 19);
             this.textBox7.TabIndex = 17;
             this.textBox7.Text = "flg7";
             this.textBox7.Enter += new System.EventHandler(this.textBoxEnter);
@@ -217,10 +206,9 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(299, 90);
-            this.textBox6.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.textBox6.Location = new System.Drawing.Point(138, 45);
             this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(173, 31);
+            this.textBox6.Size = new System.Drawing.Size(82, 19);
             this.textBox6.TabIndex = 16;
             this.textBox6.Text = "flg6";
             this.textBox6.Enter += new System.EventHandler(this.textBoxEnter);
@@ -229,10 +217,9 @@
             // radioButton6
             // 
             this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(258, 96);
-            this.radioButton6.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.radioButton6.Location = new System.Drawing.Point(119, 48);
             this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(53, 28);
+            this.radioButton6.Size = new System.Drawing.Size(29, 16);
             this.radioButton6.TabIndex = 14;
             this.radioButton6.TabStop = true;
             this.radioButton6.Text = "6";
@@ -242,10 +229,9 @@
             // radioButton7
             // 
             this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(258, 140);
-            this.radioButton7.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.radioButton7.Location = new System.Drawing.Point(119, 70);
             this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(53, 28);
+            this.radioButton7.Size = new System.Drawing.Size(29, 16);
             this.radioButton7.TabIndex = 13;
             this.radioButton7.TabStop = true;
             this.radioButton7.Text = "7";
@@ -255,10 +241,9 @@
             // radioButton8
             // 
             this.radioButton8.AutoSize = true;
-            this.radioButton8.Location = new System.Drawing.Point(258, 184);
-            this.radioButton8.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.radioButton8.Location = new System.Drawing.Point(119, 92);
             this.radioButton8.Name = "radioButton8";
-            this.radioButton8.Size = new System.Drawing.Size(53, 28);
+            this.radioButton8.Size = new System.Drawing.Size(29, 16);
             this.radioButton8.TabIndex = 12;
             this.radioButton8.TabStop = true;
             this.radioButton8.Text = "8";
@@ -267,10 +252,9 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(54, 224);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.textBox4.Location = new System.Drawing.Point(25, 112);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(173, 31);
+            this.textBox4.Size = new System.Drawing.Size(82, 19);
             this.textBox4.TabIndex = 10;
             this.textBox4.Text = "flg4";
             this.textBox4.Enter += new System.EventHandler(this.textBoxEnter);
@@ -278,10 +262,9 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(54, 178);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.textBox3.Location = new System.Drawing.Point(25, 89);
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(173, 31);
+            this.textBox3.Size = new System.Drawing.Size(82, 19);
             this.textBox3.TabIndex = 9;
             this.textBox3.Text = "flg3";
             this.textBox3.Enter += new System.EventHandler(this.textBoxEnter);
@@ -290,10 +273,9 @@
             // radioButton4
             // 
             this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(15, 230);
-            this.radioButton4.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.radioButton4.Location = new System.Drawing.Point(7, 115);
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(53, 28);
+            this.radioButton4.Size = new System.Drawing.Size(29, 16);
             this.radioButton4.TabIndex = 7;
             this.radioButton4.TabStop = true;
             this.radioButton4.Text = "4";
@@ -303,10 +285,9 @@
             // radioButton3
             // 
             this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(15, 184);
-            this.radioButton3.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.radioButton3.Location = new System.Drawing.Point(7, 92);
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(53, 28);
+            this.radioButton3.Size = new System.Drawing.Size(29, 16);
             this.radioButton3.TabIndex = 6;
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "3";
@@ -315,10 +296,9 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(54, 134);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.textBox2.Location = new System.Drawing.Point(25, 67);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(173, 31);
+            this.textBox2.Size = new System.Drawing.Size(82, 19);
             this.textBox2.TabIndex = 5;
             this.textBox2.Text = "flg2";
             this.textBox2.Enter += new System.EventHandler(this.textBoxEnter);
@@ -326,10 +306,9 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(54, 90);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.textBox1.Location = new System.Drawing.Point(25, 45);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(173, 31);
+            this.textBox1.Size = new System.Drawing.Size(82, 19);
             this.textBox1.TabIndex = 4;
             this.textBox1.Text = "flg1";
             this.textBox1.Enter += new System.EventHandler(this.textBoxEnter);
@@ -338,20 +317,18 @@
             // textBox0
             // 
             this.textBox0.Enabled = false;
-            this.textBox0.Location = new System.Drawing.Point(54, 46);
-            this.textBox0.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.textBox0.Location = new System.Drawing.Point(25, 23);
             this.textBox0.Name = "textBox0";
-            this.textBox0.Size = new System.Drawing.Size(173, 31);
+            this.textBox0.Size = new System.Drawing.Size(82, 19);
             this.textBox0.TabIndex = 3;
             this.textBox0.Text = "分類しない";
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(15, 140);
-            this.radioButton2.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.radioButton2.Location = new System.Drawing.Point(7, 70);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(53, 28);
+            this.radioButton2.Size = new System.Drawing.Size(29, 16);
             this.radioButton2.TabIndex = 2;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "2";
@@ -361,10 +338,9 @@
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(15, 96);
-            this.radioButton1.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.radioButton1.Location = new System.Drawing.Point(7, 48);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(53, 28);
+            this.radioButton1.Size = new System.Drawing.Size(29, 16);
             this.radioButton1.TabIndex = 1;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "1";
@@ -374,10 +350,9 @@
             // radioButton0
             // 
             this.radioButton0.AutoSize = true;
-            this.radioButton0.Location = new System.Drawing.Point(15, 50);
-            this.radioButton0.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.radioButton0.Location = new System.Drawing.Point(7, 25);
             this.radioButton0.Name = "radioButton0";
-            this.radioButton0.Size = new System.Drawing.Size(53, 28);
+            this.radioButton0.Size = new System.Drawing.Size(29, 16);
             this.radioButton0.TabIndex = 0;
             this.radioButton0.TabStop = true;
             this.radioButton0.Text = "0";
@@ -387,10 +362,9 @@
             // class_b
             // 
             this.class_b.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.class_b.Location = new System.Drawing.Point(30, 396);
-            this.class_b.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.class_b.Location = new System.Drawing.Point(14, 198);
             this.class_b.Name = "class_b";
-            this.class_b.Size = new System.Drawing.Size(232, 72);
+            this.class_b.Size = new System.Drawing.Size(107, 36);
             this.class_b.TabIndex = 5;
             this.class_b.Text = "連続分類モード";
             this.class_b.UseVisualStyleBackColor = true;
@@ -400,10 +374,9 @@
             // 
             this.pause_b.BackColor = System.Drawing.SystemColors.Control;
             this.pause_b.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.pause_b.Location = new System.Drawing.Point(299, 396);
-            this.pause_b.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.pause_b.Location = new System.Drawing.Point(138, 198);
             this.pause_b.Name = "pause_b";
-            this.pause_b.Size = new System.Drawing.Size(225, 72);
+            this.pause_b.Size = new System.Drawing.Size(104, 36);
             this.pause_b.TabIndex = 6;
             this.pause_b.Text = "個別分類モード";
             this.pause_b.UseVisualStyleBackColor = false;
@@ -412,10 +385,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(26, 24);
-            this.label1.Margin = new System.Windows.Forms.Padding(7, 0, 7, 0);
+            this.label1.Location = new System.Drawing.Point(12, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(158, 24);
+            this.label1.Size = new System.Drawing.Size(79, 12);
             this.label1.TabIndex = 7;
             this.label1.Text = "開いてるファイル";
             // 
@@ -424,22 +396,20 @@
             this.statusInfo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.statusInfo.BackColor = System.Drawing.SystemColors.Info;
-            this.statusInfo.Location = new System.Drawing.Point(30, 664);
-            this.statusInfo.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.statusInfo.Location = new System.Drawing.Point(14, 332);
             this.statusInfo.Multiline = true;
             this.statusInfo.Name = "statusInfo";
             this.statusInfo.ReadOnly = true;
             this.statusInfo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.statusInfo.Size = new System.Drawing.Size(494, 458);
+            this.statusInfo.Size = new System.Drawing.Size(230, 127);
             this.statusInfo.TabIndex = 8;
             // 
             // save_b
             // 
             this.save_b.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.save_b.Location = new System.Drawing.Point(30, 480);
-            this.save_b.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.save_b.Location = new System.Drawing.Point(14, 240);
             this.save_b.Name = "save_b";
-            this.save_b.Size = new System.Drawing.Size(494, 80);
+            this.save_b.Size = new System.Drawing.Size(228, 40);
             this.save_b.TabIndex = 9;
             this.save_b.Text = "分類結果を保存する";
             this.save_b.UseVisualStyleBackColor = true;
@@ -448,10 +418,9 @@
             // cancel_b
             // 
             this.cancel_b.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.cancel_b.Location = new System.Drawing.Point(30, 572);
-            this.cancel_b.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.cancel_b.Location = new System.Drawing.Point(14, 286);
             this.cancel_b.Name = "cancel_b";
-            this.cancel_b.Size = new System.Drawing.Size(494, 80);
+            this.cancel_b.Size = new System.Drawing.Size(228, 40);
             this.cancel_b.TabIndex = 10;
             this.cancel_b.Text = "画像を閉じる";
             this.cancel_b.UseVisualStyleBackColor = true;
@@ -462,21 +431,32 @@
             this.img_reset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.img_reset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.img_reset.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.img_reset.Location = new System.Drawing.Point(1799, 14);
-            this.img_reset.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.img_reset.Location = new System.Drawing.Point(848, 7);
             this.img_reset.Name = "img_reset";
-            this.img_reset.Size = new System.Drawing.Size(137, 56);
+            this.img_reset.Size = new System.Drawing.Size(63, 28);
             this.img_reset.TabIndex = 11;
             this.img_reset.Text = "更新";
             this.img_reset.UseVisualStyleBackColor = true;
             this.img_reset.Click += new System.EventHandler(this.img_reset_Click);
             // 
+            // all_image_num
+            // 
+            this.all_image_num.AutoSize = true;
+            this.all_image_num.Location = new System.Drawing.Point(150, 12);
+            this.all_image_num.Name = "all_image_num";
+            this.all_image_num.Size = new System.Drawing.Size(23, 12);
+            this.all_image_num.TabIndex = 12;
+            this.all_image_num.Text = "0/0";
+            this.all_image_num.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.all_image_num.Click += new System.EventHandler(this.label2_Click);
+            // 
             // mainForm
             // 
             this.AllowDrop = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1962, 1146);
+            this.ClientSize = new System.Drawing.Size(924, 469);
+            this.Controls.Add(this.all_image_num);
             this.Controls.Add(this.img_reset);
             this.Controls.Add(this.cancel_b);
             this.Controls.Add(this.save_b);
@@ -491,7 +471,6 @@
             this.Controls.Add(this.imgBox);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
             this.Name = "mainForm";
             this.Text = "Beach flag";
             this.Load += new System.EventHandler(this.mainForm_Load);
@@ -541,6 +520,7 @@
         private System.Windows.Forms.RadioButton radioButton6;
         private System.Windows.Forms.RadioButton radioButton7;
         private System.Windows.Forms.RadioButton radioButton8;
+        private System.Windows.Forms.Label all_image_num;
     }
 }
 

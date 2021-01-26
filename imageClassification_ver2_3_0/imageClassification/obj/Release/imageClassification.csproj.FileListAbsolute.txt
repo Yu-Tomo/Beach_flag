@@ -64,14 +64,3 @@ C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClas
 C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClassification\obj\Release\imageClassification.csproj.CoreCompileInputs.cache
 C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClassification\obj\Release\imageClassification.exe
 C:\Users\haltokyo\Desktop\Beach_flag-main\imageClassification_ver2_3_0\imageClassification\obj\Release\imageClassification.pdb
-C:\Users\haltokyo\Desktop\Beach_flag\imageClassification_ver2_3_0\imageClassification\bin\Release\imageClassification.exe.config
-C:\Users\haltokyo\Desktop\Beach_flag\imageClassification_ver2_3_0\imageClassification\bin\Release\imageClassification.exe
-C:\Users\haltokyo\Desktop\Beach_flag\imageClassification_ver2_3_0\imageClassification\bin\Release\imageClassification.pdb
-C:\Users\haltokyo\Desktop\Beach_flag\imageClassification_ver2_3_0\imageClassification\obj\Release\imageClassification.csprojAssemblyReference.cache
-C:\Users\haltokyo\Desktop\Beach_flag\imageClassification_ver2_3_0\imageClassification\obj\Release\imageClassification.Select_dir_form.resources
-C:\Users\haltokyo\Desktop\Beach_flag\imageClassification_ver2_3_0\imageClassification\obj\Release\imageClassification.mainForm.resources
-C:\Users\haltokyo\Desktop\Beach_flag\imageClassification_ver2_3_0\imageClassification\obj\Release\imageClassification.Properties.Resources.resources
-C:\Users\haltokyo\Desktop\Beach_flag\imageClassification_ver2_3_0\imageClassification\obj\Release\imageClassification.csproj.GenerateResource.cache
-C:\Users\haltokyo\Desktop\Beach_flag\imageClassification_ver2_3_0\imageClassification\obj\Release\imageClassification.csproj.CoreCompileInputs.cache
-C:\Users\haltokyo\Desktop\Beach_flag\imageClassification_ver2_3_0\imageClassification\obj\Release\imageClassification.exe
-C:\Users\haltokyo\Desktop\Beach_flag\imageClassification_ver2_3_0\imageClassification\obj\Release\imageClassification.pdb

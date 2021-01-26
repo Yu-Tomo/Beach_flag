@@ -20,7 +20,6 @@ namespace imageClassification
         public mainForm()
         {
             InitializeComponent();
-            this.Size = new Size(700,500);
             sdf = new Select_dir_form();
             sdf.MainForm = this;
             formInit();
@@ -430,8 +429,34 @@ namespace imageClassification
                 radioButton9.Checked = true;
                 imgcont.Img_set[imgcont.NowFileNum].Flg = 9;
             }
+            else if (e.KeyCode == Keys.L)
+            {
+                if (imgcont.NowFileNum < AllimgFileNum - 1)
+                {
+                    imgcont.NowFileNum++;
+                    //前回のラジオボタンの値を引きずるモード
+                    if (classContinueFlg == true)
+                    {
+                        continuity_radio(imgcont.NowFileNum - 1, imgcont.NowFileNum);
+                    }
+                    //
+                    imgcont.disp_img(imgBox, absolute_path);
+                }
+                TextView textView = new TextView();
+                textView.text_disp(disp_file_name, imgcont.Img_set[imgcont.NowFileNum].Name);   //ファイル名を描画する
+                radio_button_check(imgcont.Img_set[imgcont.NowFileNum].Flg);                    //ラジオボタンのチェックを描画する
+            }
+            else if (e.KeyCode == Keys.K)
+            {
+                if (imgcont.NowFileNum > 0)
+                {
+                    imgcont.NowFileNum--;
+                }
+                TextView textView = new TextView();
+                textView.text_disp(disp_file_name, imgcont.Img_set[imgcont.NowFileNum].Name);   //ファイル名を描画する
+                radio_button_check(imgcont.Img_set[imgcont.NowFileNum].Flg);                    //ラジオボタンのチェックを描画する
+            }
         }
-
         private void mainForm_Load(object sender, EventArgs e)
         {
 

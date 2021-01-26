@@ -258,18 +258,23 @@ namespace imageClassification
         }
         private void pause_b_Click(object sender, EventArgs e)                      //個別に分類を選択できるモード
         {
-            classContinueFlg = false;
+            mode_Individual();
+        }
+        private void mode_Individual()                                              //個別分類モード処理部
+        {
+            classContinueFlg = false;                                               //モードフラグ
             pause_b.Enabled = false;
             class_b.Enabled = true;
 
             TextView text = new TextView();
             text.text_disp(statusInfo, "--個別分類モード動作中--");
             text.text_disp(statusInfo, "画像を一枚一枚個別に分類できるモードです！");
-
-
         }
-
         private void class_b_Click(object sender, EventArgs e)                      //前回のボタンの結果を次に引きずるモード
+        {
+            mode_Multiple();
+        }
+        private void mode_Multiple()                                              //個別分類モード処理部
         {
             classContinueFlg = true;
             pause_b.Enabled = true;
@@ -279,7 +284,6 @@ namespace imageClassification
             text.text_disp(statusInfo, "--連続分類モード動作中--");
             text.text_disp(statusInfo, "スクロールすると次の画像も同じ分類になります！");
         }
-
         private void save_b_Click(object sender, EventArgs e)                       //保存用windowを表示する
         {
             foreach (TextBox tx in flgGroupBox.Controls.OfType<TextBox>())
@@ -429,7 +433,7 @@ namespace imageClassification
                 radioButton9.Checked = true;
                 imgcont.Img_set[imgcont.NowFileNum].Flg = 9;
             }
-            else if (e.KeyCode == Keys.L)
+            else if (e.KeyCode == Keys.L)                           //画像を次に進める
             {
                 if (imgcont.NowFileNum < AllimgFileNum - 1)
                 {
@@ -446,7 +450,7 @@ namespace imageClassification
                 textView.text_disp(disp_file_name, imgcont.Img_set[imgcont.NowFileNum].Name);   //ファイル名を描画する
                 radio_button_check(imgcont.Img_set[imgcont.NowFileNum].Flg);                    //ラジオボタンのチェックを描画する
             }
-            else if (e.KeyCode == Keys.K)
+            else if (e.KeyCode == Keys.K)                           //画像を戻す
             {
                 if (imgcont.NowFileNum > 0)
                 {
@@ -455,6 +459,17 @@ namespace imageClassification
                 TextView textView = new TextView();
                 textView.text_disp(disp_file_name, imgcont.Img_set[imgcont.NowFileNum].Name);   //ファイル名を描画する
                 radio_button_check(imgcont.Img_set[imgcont.NowFileNum].Flg);                    //ラジオボタンのチェックを描画する
+            }
+            else if (e.KeyCode == Keys.C)                           //モードチェンジをキーボードでできるようにする
+            {
+                if (classContinueFlg == true)
+                {
+                    mode_Individual();
+                }
+                else
+                {
+                    mode_Multiple();
+                }
             }
         }
         private void mainForm_Load(object sender, EventArgs e)

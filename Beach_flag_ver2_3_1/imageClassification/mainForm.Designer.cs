@@ -448,7 +448,6 @@
             this.all_image_num.TabIndex = 12;
             this.all_image_num.Text = "0/0";
             this.all_image_num.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.all_image_num.Click += new System.EventHandler(this.label2_Click);
             // 
             // mainForm
             // 

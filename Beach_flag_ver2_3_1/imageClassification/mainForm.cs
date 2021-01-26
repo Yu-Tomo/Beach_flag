@@ -485,10 +485,5 @@ namespace imageClassification
         {
             this.Size = new Size(800,600);
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
